@@ -13,7 +13,7 @@ public abstract class AbstractAnimal {
 
     @Override
     public String toString() {
-        return "%s name='%s, id=%d, age=%d, weight=%d, domestic=%s\n".formatted(getClass().getSimpleName(),name, id, age, weight, domesticAnimal);
+        return "%s name=%s, id=%d, age=%d, weight=%d, domestic=%s\n".formatted(getClass().getSimpleName(),name, id, age, weight, domesticAnimal);
     }
 
     public int getId() {
