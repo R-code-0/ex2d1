@@ -48,6 +48,6 @@ public abstract class AbstractTechnique {
 
     @Override
     public String toString() {
-        return "name=%s, id=%d, year=%d , model=%s\n".formatted(name, id, year, model);
+        return "%s name=%s, id=%d, year=%d , model=%s\n".formatted(getClass().getSimpleName(),name, id, year, model);
     }
 }
